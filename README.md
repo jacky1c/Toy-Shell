@@ -10,7 +10,7 @@
 ###### Sets the terminator in the toyshell command prompt to <terminator>. If no terminator is defined, toyshell should use -> as the default terminator.
 ##### d. HISTORY: 
 ###### Lists the commands that have been entered in the current session (i.e., since the last time toyshell was run). The maximum number of commands in the history list should be set to 10 as the default.
-##### e. \! <n-th>: 
+##### e. \! \<n\-th\>: 
 ###### Re-executes a command that has been previously executed in the current session. The command will execute the n-th command in the history list. For example, the command ! 6 will cause the 6-th command to be executed again.
 ##### f. NEWNAME <new_name> | <new_name> <old_name>: 
 ###### Manages the alias list. The first option deletes a previously defined alias. The second option defines an alias for another command. For example, the command NEWSMAN mymove deletes the command for mymove, and the command NEWNAME mycopy cp defines mycopy as the alias for the cp command. If an alias for a command already exists, then the new alias replaces the old alias. The maximum number of aliases in the alias list should be set to 10 as the default.
