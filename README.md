@@ -9,7 +9,7 @@
 ###### Sets the terminator in the toyshell command prompt to <terminator>. If no terminator is defined, toyshell should use -> as the default terminator.
 ##### d. HISTORY: 
 ###### Lists the commands that have been entered in the current session (i.e., since the last time toyshell was run). The maximum number of commands in the history list should be set to 10 as the default.
-##### e. ! <n>: 
+##### e. ! <n-th>: 
 ###### Re-executes a command that has been previously executed in the current session. The command will execute the n-th command in the history list. For example, the command ! 6 will cause the 6-th command to be executed again.
 ##### f. NEWNAME <new_name> | <new_name> <old_name>: 
 ###### Manages the alias list. The first option deletes a previously defined alias. The second option defines an alias for another command. For example, the command NEWSMAN mymove deletes the command for mymove, and the command NEWNAME mycopy cp defines mycopy as the alias for the cp command. If an alias for a command already exists, then the new alias replaces the old alias. The maximum number of aliases in the alias list should be set to 10 as the default.
@@ -32,19 +32,19 @@
 ###### Shell.cpp calls Queue.cpp(for command history)
 
 ### Exceptions List:
-⋅⋅* Shell configuration file cannot be found.
-###### ⋅⋅* Lack of argument
-###### ⋅⋅* Invalid argument
-###### ⋅⋅* Invalid command/ Command not found
-###### ⋅⋅* Cannot store aliases in file. Alias list is empty
-###### ⋅⋅* Cannot read from alias file. File does not exist
-###### ⋅⋅* History does not exist.
-###### ⋅⋅* Alias cannot be defined
-######   ⋅⋅* Alias is part of command
-######   ⋅⋅* The maximum number of aliases is reached
-###### ⋅⋅* Alias cannot be deleted
-######   ⋅⋅* Empty alias list
-######   ⋅⋅* Alias does not exist
+  * Shell configuration file cannot be found.
+  * Lack of argument
+  * Invalid argument
+  * Invalid command/ Command not found
+  * Cannot store aliases in file. Alias list is empty
+  * Cannot read from alias file. File does not exist
+  * History does not exist.
+  * Alias cannot be defined
+    * Alias is part of command
+    * The maximum number of aliases is reached
+  * Alias cannot be deleted
+    * Empty alias list
+    * Alias does not exist
 
 
 ###### Created by Jacky on 2017-09-08.
