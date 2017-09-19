@@ -32,7 +32,7 @@
 ###### Shell.cpp calls Queue.cpp(for command history)
 
 ### Exceptions List:
-###### ⋅⋅* Shell configuration file cannot be found.
+⋅⋅* Shell configuration file cannot be found.
 ###### ⋅⋅* Lack of argument
 ###### ⋅⋅* Invalid argument
 ###### ⋅⋅* Invalid command/ Command not found
